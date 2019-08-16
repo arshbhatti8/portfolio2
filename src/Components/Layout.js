@@ -28,7 +28,10 @@ const Layout = () => {
                     </Row>
                 </Container>
             </Row>
-            <Row className="whatIDo">
+            <Row>
+                <Container fluid className="whatIDo">
+
+                </Container>
             </Row>
             <Row className="workExperience">
             </Row>

@@ -1,8 +1,4 @@
-.container-fluid {
-    height: 100% !important;
-}
-
-.row {
+.container-fluid,.container,.row{
     height: 100% !important;
 }
 
@@ -11,7 +7,7 @@
 }
 
 .introduction-row{
-    padding-top: 10%;
+    margin-top: 5%;
 }
 
 .introduction-text{
@@ -30,9 +26,15 @@
     min-width:100%;
 }
 
-.whatIdo{
-    background: aqua;
+.whatIDo{
+    background-image: url("https://i.ibb.co/YtRp6jV/caffiene.jpg");
+    height: 100%!;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 
 .workExperience{
     background: blue;
