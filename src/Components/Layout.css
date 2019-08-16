@@ -1,0 +1,43 @@
+.container-fluid {
+    height: 100% !important;
+}
+
+.row {
+    height: 100% !important;
+}
+
+.particles{
+    background: gold;
+}
+
+.introduction-row{
+    padding-top: 10%;
+}
+
+.introduction-text{
+
+}
+
+.introduction-image-col{
+
+}
+
+.introduction-card{
+    width:70%;
+}
+
+.introduction-card-image{
+    min-width:100%;
+}
+
+.whatIdo{
+    background: aqua;
+}
+
+.workExperience{
+    background: blue;
+}
+
+.projects{
+    background: yellow;
+}
