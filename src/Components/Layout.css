@@ -6,15 +6,26 @@
     background: gold;
 }
 
-.introduction-row{
+.section-row{
     margin-top: 5%;
 }
 
-.introduction-text{
-
+.whatIDoGridLeft{
+    border:1px solid grey;
+    border-left:0;
+    overflow:auto;
 }
 
-.introduction-image-col{
+.webDevelopmentImage{
+    width:80%;
+}
+
+.whatIDoGridRight{
+    border:1px solid grey;
+    border-right:0;
+}
+
+.introduction-row{
 
 }
 
@@ -27,14 +38,14 @@
 }
 
 .whatIDo{
+    margin-top:5%;
     background-image: url("https://i.ibb.co/YtRp6jV/caffiene.jpg");
-    height: 100%!;
+    height: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
 
 .workExperience{
     background: blue;

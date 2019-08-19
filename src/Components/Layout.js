@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 
 import IntroductionCard from './IntroductionCard';
 import IntroductionInfo from './IntroductionInfo';
+import WhatIDo from './WhatIDo'
 
 import NavbarTop from './NavbarTop';
 
@@ -16,23 +17,21 @@ const Layout = () => {
             <NavbarTop/>
             <Row className="particles">
             </Row>
-            <Row>
-                <Container>
-                    <Row className="introduction-row">
-                        <Col md={6} className="introduction-text">
-                            <IntroductionInfo/>
-                        </Col>
-                        <Col md={{size: 5, offset: 1}} className="introduction-image-col">
-                            <IntroductionCard/>
-                        </Col>
-                    </Row>
-                </Container>
-            </Row>
-            <Row>
-                <Container fluid className="whatIDo">
-
-                </Container>
-            </Row>
+            <Container>
+                <Row className="section-row">
+                    <Col md={6} sm={12} xs={12}>
+                        <IntroductionInfo/>
+                    </Col>
+                    <Col md={{size: 5, offset: 1}} sm={12} xs={12}>
+                        <IntroductionCard/>
+                    </Col>
+                </Row>
+            </Container>
+            <Container fluid className="whatIDo">
+                <Row>
+                    <WhatIDo/>
+                </Row>
+            </Container>
             <Row className="workExperience">
             </Row>
             <Row className="projects">
