@@ -1,32 +1,19 @@
-.container-fluid,.container,.row{
-    height: 100% !important;
-}
 
 .particles{
-    background: gold;
+    height:100vh;
+}
+
+.introductionContainer{
+    z-index: 1;
+    color:#fff;
 }
 
 .section-row{
     margin-top: 5%;
 }
 
-.whatIDoGridLeft{
-    border:1px solid grey;
-    border-left:0;
-    overflow:auto;
-}
-
 .webDevelopmentImage{
     width:80%;
-}
-
-.whatIDoGridRight{
-    border:1px solid grey;
-    border-right:0;
-}
-
-.introduction-row{
-
 }
 
 .introduction-card{
@@ -39,12 +26,16 @@
 
 .whatIDo{
     margin-top:5%;
-    background-image: url("https://i.ibb.co/YtRp6jV/caffiene.jpg");
     height: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.whatIDoContainer{
+    margin-top:5%;
+    color:white;
 }
 
 .workExperience{
@@ -53,4 +44,27 @@
 
 .projects{
     background: yellow;
+}
+
+.journeyTitle{
+    color:white;
+    margin-bottom: 0;
+}
+
+.journeyContainer{
+    text-align: center;
+}
+
+.container-fluid{
+    padding:0;
+}
+
+.verticalTimeline{
+    margin-top:0!important;
+}
+
+.vertical-timeline-element-content{
+    color:white;
+    padding:0!important;
+    background-image: linear-gradient(to right, #bac1cc, #676b70)!important;
 }
