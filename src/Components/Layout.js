@@ -20,7 +20,8 @@ const Layout = () => {
             <div className="twinkling"/>
             <Row className="particles">
             </Row>
-            <Container className="introductionContainer">
+            <div id="about"/>
+            <Container className="introductionContainer" >
                 <Row className="section-row">
                     <Col md={6} sm={12} xs={12}>
                         <IntroductionInfo/>
@@ -31,7 +32,7 @@ const Layout = () => {
                 </Row>
             </Container>
             <div className="clouds">
-            <Row className="whatIDo">
+            <Row className="whatIDo" id="whatIDo">
                 <WhatIDo/>
             </Row>
             </div>

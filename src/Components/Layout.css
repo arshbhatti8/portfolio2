@@ -4,6 +4,7 @@
 }
 
 .introductionContainer{
+    margin-top: 10%;
     z-index: 1;
     color:#fff;
 }
@@ -52,6 +53,7 @@
 }
 
 .journeyContainer{
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -64,7 +66,25 @@
 }
 
 .vertical-timeline-element-content{
-    color:white;
+    color:#808080;
     padding:0!important;
-    background-image: linear-gradient(to right, #bac1cc, #676b70)!important;
+    background: #0f0f0f!important;
+    box-shadow: none!important;
+}
+
+.timelineCardTitleHeader{
+    color:black!important;
+    background: #fff;
+}
+
+.vertical-timeline-element-content p{
+    color: #ffffff !important;
+}
+
+.vertical-timeline-element-date{
+    color: #ffffff !important;
+}
+
+.vertical-timeline-element-date{
+    
 }

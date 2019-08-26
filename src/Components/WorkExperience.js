@@ -1,5 +1,7 @@
 import React from 'react';
-import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
+import {VerticalTimeline} from 'react-vertical-timeline-component';
+
+import WorkExperienceCard from './WorkExperienceCard';
 
 import {ReactComponent as Briefcase} from '../assets/briefcase.svg';
 import {ReactComponent as EMC2} from '../assets/blackboard.svg';
@@ -10,101 +12,47 @@ import 'react-vertical-timeline-component/style.min.css';
 const WorkExperience = () => {
     return (
         <VerticalTimeline className="verticalTimeline">
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2011 - present"
-                iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                icon={<Briefcase/>}>
-                <div>
-                <h3 className="vertical-timeline-element-title">Software Engineer</h3>
-                <h5 className="vertical-timeline-element-subtitle">Wejo, San Jose</h5>
-                </div>
-                <h6>Tech Stack: ReactJS, NodeJS, ExpressJS, Javascript ES6, AWS Cognito, AWS Amplify, Plotly.js, React Map GL,Bootstrap, Polyfills, Git, Enzyme, Jest
-                </h6>
-                <br/>
-                <ul>
-                    <li>
-                        Designed and created visual insights using graphs and charts visualizing data aggregated into
-                        batches from a data stream.
-                    </li>
-                    <li>
-                        Created interactive visualizations with animations highlighting geographic areas on the map
-                        based on company data using React Map GL.
-                    </li>
-                </ul>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2010 - 2011"
-                iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                icon={<Briefcase/>}>
-                <h3 className="vertical-timeline-element-title">Art Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2008 - 2010"
-                iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                icon={<Briefcase/>}>
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                <p>
-                    User Experience, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{background: 'rgb(33, 150, 243)', color: '#fff'}}
-                icon={<Briefcase/>}>
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                    User Experience, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="April 2013"
-                iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
-                icon={<Briefcase/>}>
-                <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                <p>
-                    Strategy, Social Media
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="November 2012"
-                iconStyle={{background: 'rgb(233, 30, 99)', color: '#fff'}}
-                icon={<Briefcase/>}>
-                <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
-                iconStyle={{background: '#fff', color: 'black'}}
-                icon={<Formula/>}>
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual
-                    Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                <p>
-                    Creative Direction, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                iconStyle={{background: 'rgb(16, 204, 82)', color: '#fff'}}
-                icon={<EMC2/>}/>
+            {data.map((dataItem, index) => <WorkExperienceCard {...dataItem} key={index}/>)}
         </VerticalTimeline>
     );
 };
+
+const data = [{
+    date: "Jan 2019 - July 2019",
+    title: "Software Engineer",
+    subtitle: "Wejo, San Jose",
+    techStack: "ReactJS, NodeJS, ExpressJS, Javascript ES6, AWS Cognito, AWS Amplify, Plotly.js, React Map GL,Bootstrap, Polyfills, Git, Enzyme, Jest",
+    responsibilities: ["Designed and created visual insights using graphs and charts visualizing data aggregated into batches from a data stream.",
+        "Created interactive visualizations with animations highlighting geographic areas on the map based on company data using React Map GL.",
+        "Made the application very responsive to adapt to different screen sizes and cross-compatibility for different browsers using polyfills for browsers like Internet explorer.",
+        "Made bar charts, gauge charts, area charts, heatmaps and scatter plots using Plotly.js.",
+        "Built forms with complex custom validation logic for example for: password policy by checking for conditions in real-time, giving visual feedback using CSS animations.",
+        "Created a Role Based access, custom interface for AWS Cognito using its API to create, view and delete users with complex trees of users."]
+}, {
+    date: " July 2018 – September 2018",
+    title: "Front End Developer Intern",
+    subtitle: "SAP Ariba, Palo Alto",
+    techStack: "Angular.js, Javascript ES6, TypeScript, GraphQL, Apollo, Karma, Jasmine, Gherkin, Cucumber, Selenium Web Driver",
+    responsibilities: ["Enhanced existing codebase to support user tracking from front-end.",
+        "Lead the User Tracking initiative that tracks user’s activities site-wide.",
+        "Wrote Services in Angular 4 for HTTP calls to Java Microservices based Ingestor service.",
+        "Made a directive that is reusable and attachable to any HTML element, dispatching an event using the above said angular HTTP service.",
+        "Built charts using D3 to visualize data, extracting data from a GraphQL endpoint.",
+        "Made AJAX calls by subscribing to an Apollo observable to get data in real time from GraphQL endpoint.",
+        "Wrote unit tests, maintaining code coverage upwards of 85%."]
+}, {
+    date: " July 2014- October 2015",
+    title: "Software Engineer",
+    subtitle: "SAP Ariba, Palo Alto",
+    techStack: "Angular JS, Node JS, React JS, HTML, CSS, Bootstrap, JQuery, AJAX",
+    responsibilities: ["Made Single Page Applications (SPA) for clients, writing test cases for individual components.",
+        "Worked with React-Redux ecosystem to support complex data manipulation on the frontend.",
+        "Maintained application state using Redux.",
+        "Supported SPA solutions for clients in Angular.",
+        "Maintained and enhanced capabilities of enterprise level AngularJS codebase to support internal tools.",
+        "Tested the solutions for clients by writing Unit Test Case in Jest and Jasmine according the framework used.",
+        "Performed manual testing of web pages developed.",
+        "Worked in an agile environment to meet project deadlines."]
+}];
 
 export default WorkExperience;

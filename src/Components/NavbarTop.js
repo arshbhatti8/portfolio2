@@ -26,10 +26,10 @@ const NavbarTop = () => {
                             <NavLink href="/components/">Intro</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">About</NavLink>
+                            <NavLink href="#about">About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">What I Do</NavLink>
+                            <NavLink href="#whatIDo">What I Do</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
