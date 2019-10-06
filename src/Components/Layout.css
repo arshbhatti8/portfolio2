@@ -13,8 +13,61 @@
     margin-top: 5%;
 }
 
-.webDevelopmentImage{
-    width:80%;
+.webDevelopmentLogo {
+    width:32%;
+}
+
+.reactImage{
+    width:20%;
+}
+
+.reactLogo{
+    width:15%;
+    margin: 2% 12% 0 5%;
+}
+
+.angularLogo{
+    width:16%;
+    margin: 2% 12% 0 5%;
+}
+
+.restLogo{
+    width:20%;
+    height:50%;
+    margin:5.5% 0 0 4%;
+}
+
+.nodeLogo{
+    width:30%;
+    margin-left:7%;
+}
+
+.expressLogo{
+    width:30%;
+    margin:5.5% 0 0 7%;
+    height:50%;
+}
+
+.mongoDBLogo{
+    width:17%;
+    margin: 0 3% 0 30%;
+}
+
+.mySQLLogo{
+    width:17%;
+    margin:-0.5% 20% 0 5%;
+}
+
+.frontEndFrameworksTitle{
+    margin: 3.5% 0 0 0;
+}
+
+.whatIdoTopRow{
+    margin: 2% 0 2% 0;
+}
+
+.whatIdoBottomRow{
+    margin: 2% 0 0 0;
 }
 
 .introduction-card{
@@ -35,7 +88,7 @@
 }
 
 .whatIDoContainer{
-    margin-top:5%;
+    margin:5% auto 0 auto;
     color:white;
 }
 
@@ -78,13 +131,14 @@
 }
 
 .vertical-timeline-element-content p{
-    color: #ffffff !important;
+    color: #fff !important;
 }
 
 .vertical-timeline-element-date{
-    color: #ffffff !important;
+    color: #fff !important;
 }
 
 .vertical-timeline-element-date{
-    
+    color:#fff;
+    background-color: #0f0f0f!important;
 }
