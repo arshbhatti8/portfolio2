@@ -1,62 +1,69 @@
-.container-fluid,.container,.row{
-    /* height: 100% !important; */
-    padding:0;
+.container-fluid,
+.container,
+.row {
+  /* height: 100% !important; */
+  padding: 0;
 }
 
-.particles{
-    background: gold;
+.particles {
+  background: gold;
 }
 
-.section-row{
-    margin-top: 5%;
+.section-row {
+  margin-top: 5%;
 }
 
-.whatIDoGridLeft{
-    border-right:1px solid grey;
-    overflow:auto;
+.whatIDo {
+  margin-top: 5%;
+  background-image: url("https://i.ibb.co/YtRp6jV/caffiene.jpg");
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
 
-.webDevelopmentImage{
-    width:80%;
+.whatIDoRow {
+  padding: 100px;
 }
 
-.whatIDoGridRight{
-    border:1px solid grey;
-    border-right:0;
+.whatIDoGridLeft {
+  border-right: 1px solid grey;
+  overflow: auto;
 }
 
-.whatIDo h3,p{
-    padding:20px;  
-    padding-left:40px;  
+.whatIDoGridRight {
+  border: 1px solid grey;
+  border-right: 0;
 }
 
-.whatIDoGridBottomRow{
-    border-top:2px solid grey;
+.whatIDoRow h3,
+p {
+  padding: 20px;
+  padding-left: 40px;
 }
 
-.introduction-card{
-    width:70%;
+.whatIDoGridBottomRow {
+  border-top: 2px solid grey;
 }
 
-.introduction-card-image{
-    min-width:100%;
+.webDevelopmentImage {
+  width: 80%;
 }
 
-.whatIDo{
-    margin-top:5%;
-    background-image: url("https://i.ibb.co/YtRp6jV/caffiene.jpg");
-    height: 100%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color:white;
+.introduction-card {
+  width: 70%;
 }
 
-.workExperience{
-    background: blue;
+.introduction-card-image {
+  min-width: 100%;
 }
 
-.projects{
-    background: yellow;
+.workExperience {
+  /* background: blue; */
+}
+
+.projects {
+  background: yellow;
 }
