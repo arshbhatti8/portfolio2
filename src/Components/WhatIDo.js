@@ -8,9 +8,48 @@ const WhatIDo = () => {
     return (
         <>
             <Col md={6} sm={12} className="whatIDoGridLeft">
-                <img src="https://i.ibb.co/8Y2Yq0R/all-logo.png" className="webDevelopmentImage"/>
+                <Row>
+                    <img src="https://i.ibb.co/8Y2Yq0R/all-logo.png" className="webDevelopmentImage"/>
+                    <h3>
+                        WEB DEVELOPMENT
+                    </h3>
+                    <p>
+                        Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, 
+                        I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.
+                    </p>
+                </Row>
+                <Row className="whatIDoGridBottomRow">
+                    <img src="https://i.ibb.co/8Y2Yq0R/all-logo.png" className="webDevelopmentImage"/>
+                    <h3>
+                        WEB DEVELOPMENT
+                    </h3>
+                    <p>
+                        Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, 
+                        I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.
+                    </p>
+                </Row>
             </Col>
-            <Col md={6} sm={12} className="whatIDoGridRight">
+            <Col md={6} sm={12}>
+                 <Row>
+                    <img src="https://i.ibb.co/8Y2Yq0R/all-logo.png" className="webDevelopmentImage"/>
+                    <h3>
+                        WEB DEVELOPMENT
+                    </h3>
+                    <p>
+                        Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, 
+                        I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.
+                    </p>
+                </Row>
+                 <Row className="whatIDoGridBottomRow">
+                    <img src="https://i.ibb.co/8Y2Yq0R/all-logo.png" className="webDevelopmentImage"/>
+                    <h3>
+                        WEB DEVELOPMENT
+                    </h3>
+                    <p>
+                        Using HTML, CSS, and JavaScript with pre-processors and build tools such as Sass and Grunt, 
+                        I have a passion for developing pixel-perfect websites and apps while maintaining a semantic, modular, and DRY code base.
+                    </p>
+                </Row>
             </Col>
         </>
     );

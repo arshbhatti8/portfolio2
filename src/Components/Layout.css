@@ -1,5 +1,6 @@
 .container-fluid,.container,.row{
-    height: 100% !important;
+    /* height: 100% !important; */
+    padding:0;
 }
 
 .particles{
@@ -11,8 +12,7 @@
 }
 
 .whatIDoGridLeft{
-    border:1px solid grey;
-    border-left:0;
+    border-right:1px solid grey;
     overflow:auto;
 }
 
@@ -25,8 +25,13 @@
     border-right:0;
 }
 
-.introduction-row{
+.whatIDo h3,p{
+    padding:20px;  
+    padding-left:40px;  
+}
 
+.whatIDoGridBottomRow{
+    border-top:2px solid grey;
 }
 
 .introduction-card{
@@ -45,6 +50,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color:white;
 }
 
 .workExperience{
